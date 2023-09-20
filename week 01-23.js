@@ -12,12 +12,12 @@ into it the http package (shared code) from node.js */
 let myserver = myhttp.createServer(
    function( myrequest, myresponse ){
      console.log( myrequest.url );
-
+ 
      let mytext;
      if ( myrequest.url  === "/home"){
        mytext = "home is where you make it. ";
      } else if (myrequest.url === "/heck") {
-       mytext = "What the heck go to .../home.";
+       mytext = "What the heck go to .../home..";
      }
      else 
        mytext = "nobody is home, try .../heck";
